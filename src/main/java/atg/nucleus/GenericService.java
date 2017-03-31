@@ -26,4 +26,11 @@ public class GenericService
         return null;
     }
 
+    /**
+     * @return the newly created admin servlet that draws and does admin in dyn admin for this service usually a {@link ServiceAdminServlet}
+     */
+    protected Servlet createAdminServlet(){
+        return null;
+    }
+
 }
