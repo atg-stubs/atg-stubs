@@ -20,4 +20,9 @@ public class GSARepository
         SwitchingDataSourceEventListener,
         DataSourceShutdownListener,
         LoadBatchRepository {
+
+
+    public String[] getItemDescriptorNames() {
+        return new String[0];
+    }
 }
