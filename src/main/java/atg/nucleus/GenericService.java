@@ -33,4 +33,15 @@ public class GenericService
         return null;
     }
 
+
+    private Nucleus nucleus;
+
+    public Nucleus getNucleus(){
+        return nucleus;
+    }
+
+    public void setNucleus(Nucleus nucleus){
+        this.nucleus = nucleus;
+    }
+
 }
