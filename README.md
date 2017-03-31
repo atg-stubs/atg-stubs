@@ -1,5 +1,5 @@
 ## What?
-Stubs of the ATG / Oracle Commerce Java Classes so you can build your Open Source Projects.  Not ever class or method is here, they are only added as needed.
+Stubs of the ATG / Oracle Commerce Java Classes so you can build your Open Source Projects.  Not every class or method is here, they are only added as needed by projects that need the references.
 
 ## Why?
 Suppose you want to release some open source project that is for use with the Oracle ATG Commerce platform...how could you reference the atg package namespace classes?  Those jars aren't available anywhere conveniently.  This project was started to offer java binary compatible references to based your project off of. 
