@@ -25,3 +25,5 @@ You are on the 10.2.0 branch.  The other branches are:
 ## Contribute?
 This repo is organized such that each branch is a released version of Oracle Commerce.  Submit your PR's to the appropriate branch.  Link to javadocs if you can in your PRs and code.
 
+##Thanks
+* https://dracoblue.net/dev/uploading-snapshots-and-releases-to-maven-central-with-travis/ - for an awesome writeup on how to auto publish to sonatype from travis-ci
