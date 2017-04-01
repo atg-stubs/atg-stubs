@@ -8,6 +8,47 @@
   <artifactId>atg-stubs</artifactId>
   <version>10.2.0-SNAPSHOT</version>
 
+  <name>atg-stubs</name>
+  <url>https://atg-stubs.github.io/atg-stubs/</url>
+  <description>Stubs of the ATG / Oracle Commerce Java Classes so you can build your Open Source Projects</description>
+
+  <scm>
+    <url>https://github.com/atg-stubs/atg-stubs</url>
+    <connection>https://github.com/atg-stubs/atg-stubs</connection>
+    <developerConnection>https://github.com/atg-stubs/atg-stubs</developerConnection>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>drdamour</id>
+      <name>drdamour</name>
+      <email>drdamour@gamil.com</email>
+      <url>http://talkshowhost.net</url>
+    </developer>
+  </developers>
+
+  <!-- this refers to the recreations..but all the contracts are copyright oracle -->
+  <licenses>
+    <license>
+      <name>MIT</name>
+      <url>https://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <!-- There is no intent to ever release final versions of these -->
+    <!--repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository-->
+  </distributionManagement>
+
 
   <dependencies>
     <dependency>
@@ -22,4 +63,55 @@
       <version>1.2</version>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+
+      <!-- from https://maven.apache.org/plugins/maven-source-plugin/usage.html -->
+      <plugin>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>3.0.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- from https://maven.apache.org/plugins/maven-javadoc-plugin/usage.html -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.10.4</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>javadoc-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- from http://maven.apache.org/plugins/maven-gpg-plugin/usage.html -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>1.6</version>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+    </plugins>
+  </build>
 </project>
