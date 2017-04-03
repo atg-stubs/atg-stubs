@@ -23,5 +23,5 @@ Yes really a snapshot..this is an ever evolving library with new methods added a
 ## Contribute?
 This repo is organized such that each branch is a released version of Oracle Commerce.  Submit your PR's to the appropriate branch.  Link to javadocs if you can in your PRs and code.
 
-##Thanks
+## Thanks
 * https://dracoblue.net/dev/uploading-snapshots-and-releases-to-maven-central-with-travis/ - for an awesome writeup on how to auto publish to sonatype from travis-ci
