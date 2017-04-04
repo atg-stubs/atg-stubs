@@ -18,7 +18,9 @@ In maven just include this as a provided dependency (provided because at runtime
 Yes really a snapshot..this is an ever evolving library with new methods added all the time.  And since it is provided does it really matter?  If you want to debate this raise an issue.
 
 ## Where?
-10.2.0 Badge
+The available branches are:
+[![10.2.0 Build Status](https://img.shields.io/travis/atg-stubs/atg-stubs/10.2.0.svg?label=10.2.0%20Build)](https://github.com/atg-stubs/atg-stubs/tree/10.2.0)
+
 
 ## Contribute?
 This repo is organized such that each branch is a released version of Oracle Commerce.  Submit your PR's to the appropriate branch.  Link to javadocs if you can in your PRs and code.
