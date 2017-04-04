@@ -1,0 +1,15 @@
+language: java
+jdk:
+ - openjdk6
+
+# We only build specific version branches
+branches:
+  only:
+  - 10.2.0
+
+before_install:
+  - if [ ! -z "$GPG_SECRET_KEYS" ]; then echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import; fi
+  - if [ ! -z "$GPG_OWNERTRUST" ]; then echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust; fi
+
+
+script: mvn clean deploy --settings .travis/settings.xml -B -U
