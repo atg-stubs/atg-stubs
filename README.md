@@ -23,6 +23,7 @@ Yes really a snapshot..this is an ever evolving library with new methods added a
 
 ## Where?
 You are on the 10.2.0 branch.  The available branches are:
+
 [![10.2.0 Build Status](https://img.shields.io/travis/atg-stubs/atg-stubs/10.2.0.svg?label=10.2.0%20Build)](https://github.com/atg-stubs/atg-stubs/tree/10.2.0)
 
 ## Contribute?
