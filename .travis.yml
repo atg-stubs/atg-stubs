@@ -12,4 +12,5 @@ before_install:
   - if [ ! -z "$GPG_OWNERTRUST" ]; then echo $GPG_OWNERTRUST | base64 --decode | gpg --batch --import-ownertrust; fi
 
 
-script: mvn clean deploy --settings .travis/settings.xml -B -U
+script:
+ - mvn clean deploy --settings .travis/settings.xml -B -U
