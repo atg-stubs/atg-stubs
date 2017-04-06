@@ -34,4 +34,20 @@ public class ServiceAdminServlet
 
 
     }
+
+    /**
+     * prints stuff right before the closing head tag
+     * @param req
+     * @param res
+     * @param out
+     * @throws ServletException
+     * @throws IOException
+     */
+    protected void insertStyle(
+        HttpServletRequest req,
+        HttpServletResponse res,
+        ServletOutputStream out
+    ) throws ServletException, IOException {
+
+    }
 }
