@@ -1,4 +1,4 @@
-package atg.repository.content;
+package atg.repository;
 
 import atg.core.exception.ContainerException;
 
