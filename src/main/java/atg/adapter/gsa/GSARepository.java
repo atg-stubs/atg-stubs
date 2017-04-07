@@ -1,11 +1,7 @@
 package atg.adapter.gsa;
 
 import atg.adapter.gsa.event.GSAEventListener;
-import atg.core.exception.ContainerException;
-import atg.repository.MutableCompositeKeyRepository;
-import atg.repository.MutableRepository;
-import atg.repository.RepositoryImpl;
-import atg.repository.RepositoryItemDescriptor;
+import atg.repository.*;
 import atg.repository.content.ContentRepository;
 import atg.service.jdbc.DataSourceShutdownListener;
 import atg.service.jdbc.SwitchingDataSourceEventListener;
@@ -31,7 +27,7 @@ public class GSARepository
 
 
     //From Repository interface
-    public RepositoryItemDescriptor getItemDescriptor(String descriptorName) throws ContainerException.RepositoryException {
+    public RepositoryItemDescriptor getItemDescriptor(String descriptorName) throws RepositoryException {
         return null;
     }
 }

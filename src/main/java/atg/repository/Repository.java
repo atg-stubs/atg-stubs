@@ -1,6 +1,5 @@
 package atg.repository;
 
-import atg.core.exception.ContainerException;
 
 public interface Repository extends RepositoryViewContainer {
 
@@ -13,7 +12,7 @@ public interface Repository extends RepositoryViewContainer {
     /**
      * @param descriptorName the name of the repo item descriptor
      * @return the repo item descriptor with the given name
-     * @throws ContainerException.RepositoryException probably when the name doesn't match a descriptor
+     * @throws RepositoryException probably when the name doesn't match a descriptor
      */
-    RepositoryItemDescriptor getItemDescriptor(String descriptorName) throws ContainerException.RepositoryException;
+    RepositoryItemDescriptor getItemDescriptor(String descriptorName) throws RepositoryException;
 }
