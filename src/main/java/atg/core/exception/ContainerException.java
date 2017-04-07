@@ -9,7 +9,4 @@ public class ContainerException
         return null;
     }
 
-    public static class RepositoryException extends ContainerException {
-
-    }
 }
