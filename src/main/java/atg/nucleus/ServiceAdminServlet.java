@@ -16,7 +16,7 @@ public class ServiceAdminServlet
     NotSerializable {
 
     public ServiceAdminServlet(Object pService, Nucleus pNucleus) {
-        throw new NotImplementedException("constructor", this.getClass());
+
     }
 
     /**
