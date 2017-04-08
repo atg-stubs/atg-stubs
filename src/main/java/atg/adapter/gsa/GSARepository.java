@@ -6,6 +6,7 @@ import atg.repository.content.ContentRepository;
 import atg.service.jdbc.DataSourceShutdownListener;
 import atg.service.jdbc.SwitchingDataSourceEventListener;
 import atg.service.lockmanager.LockOwnershipListener;
+import io.github.atg.stubs.NotImplementedException;
 
 public class GSARepository
     extends RepositoryImpl
@@ -22,12 +23,12 @@ public class GSARepository
 
     //From Repository interface
     public String[] getItemDescriptorNames() {
-        return new String[0];
+        throw new NotImplementedException("getItemDescriptorNames", this.getClass());
     }
 
 
     //From Repository interface
     public RepositoryItemDescriptor getItemDescriptor(String descriptorName) throws RepositoryException {
-        return null;
+        throw new NotImplementedException("getItemDescriptor", this.getClass());
     }
 }

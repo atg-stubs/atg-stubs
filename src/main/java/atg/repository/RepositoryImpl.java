@@ -1,6 +1,7 @@
 package atg.repository;
 
 import atg.nucleus.GenericService;
+import io.github.atg.stubs.NotImplementedException;
 
 import javax.transaction.TransactionManager;
 
@@ -11,14 +12,12 @@ public abstract class RepositoryImpl
     ProxyableRepository {
 
 
-    private TransactionManager txManager;
-
     public void setTransactionManager(TransactionManager txManager){
-        this.txManager = txManager;
+        throw new NotImplementedException("setTransactionManager", this.getClass());
     }
 
     public TransactionManager getTransactionManager(){
-        return this.txManager;
+        throw new NotImplementedException("getTransactionManager", this.getClass());
     }
 
 

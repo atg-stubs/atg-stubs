@@ -1,26 +1,28 @@
 package atg.nucleus;
 
+import io.github.atg.stubs.NotImplementedException;
+
 import javax.servlet.*;
 import java.io.IOException;
 
 public class Nucleus extends GenericContext implements Servlet {
     public void init(ServletConfig config) throws ServletException {
-
+        throw new NotImplementedException("init", this.getClass());
     }
 
     public ServletConfig getServletConfig() {
-        return null;
+        throw new NotImplementedException("getServletConfig", this.getClass());
     }
 
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-
+        throw new NotImplementedException("service", this.getClass());
     }
 
     public String getServletInfo() {
-        return null;
+        throw new NotImplementedException("getServletInfo", this.getClass());
     }
 
     public void destroy() {
-
+        throw new NotImplementedException("destroy", this.getClass());
     }
 }

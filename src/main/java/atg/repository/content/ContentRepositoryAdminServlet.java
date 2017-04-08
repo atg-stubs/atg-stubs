@@ -4,6 +4,7 @@ import atg.nucleus.Nucleus;
 import atg.nucleus.ServiceAdminServlet;
 import atg.nucleus.logging.ApplicationLogging;
 import atg.repository.RepositoryItemImpl;
+import io.github.atg.stubs.NotImplementedException;
 
 import javax.transaction.TransactionManager;
 

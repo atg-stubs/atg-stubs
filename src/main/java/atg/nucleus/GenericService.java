@@ -3,6 +3,7 @@ package atg.nucleus;
 import atg.naming.*;
 import atg.nucleus.logging.ApplicationLoggingSender;
 import atg.nucleus.logging.VariableArgumentApplicationLoggingImpl;
+import io.github.atg.stubs.NotImplementedException;
 
 import javax.servlet.Servlet;
 
@@ -23,25 +24,23 @@ public class GenericService
      * @return the admin servlet that draws and does admin in dyn admin for this service usually a {@link ServiceAdminServlet}
      */
     public Servlet getAdminServlet(){
-        return null;
+        throw new NotImplementedException("getAdminServlet", this.getClass());
     }
 
     /**
      * @return the newly created admin servlet that draws and does admin in dyn admin for this service usually a {@link ServiceAdminServlet}
      */
     protected Servlet createAdminServlet(){
-        return null;
+        throw new NotImplementedException("createAdminServlet", this.getClass());
     }
 
 
-    private Nucleus nucleus;
-
     public Nucleus getNucleus(){
-        return nucleus;
+        throw new NotImplementedException("getNucleus", this.getClass());
     }
 
     public void setNucleus(Nucleus nucleus){
-        this.nucleus = nucleus;
+        throw new NotImplementedException("setNucleus", this.getClass());
     }
 
 }

@@ -1,6 +1,7 @@
 package atg.nucleus;
 
 import atg.beans.NotSerializable;
+import io.github.atg.stubs.NotImplementedException;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
@@ -15,7 +16,7 @@ public class ServiceAdminServlet
     NotSerializable {
 
     public ServiceAdminServlet(Object pService, Nucleus pNucleus) {
-
+        throw new NotImplementedException("constructor", this.getClass());
     }
 
     /**
@@ -31,7 +32,7 @@ public class ServiceAdminServlet
         HttpServletResponse response,
         ServletOutputStream out
     ) throws ServletException, IOException {
-
+        throw new NotImplementedException("printAdmin", this.getClass());
 
     }
 
@@ -48,6 +49,6 @@ public class ServiceAdminServlet
         HttpServletResponse res,
         ServletOutputStream out
     ) throws ServletException, IOException {
-
+        throw new NotImplementedException("insertStyle", this.getClass());
     }
 }
