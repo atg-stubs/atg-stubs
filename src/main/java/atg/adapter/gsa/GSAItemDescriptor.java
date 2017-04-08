@@ -19,17 +19,5 @@ public class GSAItemDescriptor
         throw new NotImplementedException("compareTo", this.getClass());
     }
 
-    /**
-     * @return true if this property can be queried, false if it can not
-     */
-    public boolean isQueryable(){
-        throw new NotImplementedException("isQueryable", this.getClass());
-    }
 
-    /**
-     * @return true if this property is derived, false if it is not
-     */
-    public boolean isDerived(){
-        throw new NotImplementedException("isDerived", this.getClass());
-    }
 }
