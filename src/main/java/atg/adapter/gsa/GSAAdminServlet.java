@@ -14,6 +14,6 @@ public class GSAAdminServlet extends ContentRepositoryAdminServlet {
         Nucleus nucleus,
         TransactionManager txManager
     ) {
-        super(service, logger, nucleus, txManager);
+        super(null, null, null, null);
     }
 }

@@ -17,7 +17,7 @@ public class ContentRepositoryAdminServlet
         ApplicationLogging logger,
         Nucleus nucleus
     ) {
-        super(service, nucleus);
+        super(null, null);
     }
 
     public ContentRepositoryAdminServlet(
@@ -26,6 +26,6 @@ public class ContentRepositoryAdminServlet
         Nucleus nucleus,
         TransactionManager txManager
     ) {
-        super(service, nucleus);
+        super(null, null);
     }
 }
