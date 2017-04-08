@@ -16,14 +16,6 @@ public interface RepositoryItemDescriptor extends DynamicBeanInfo {
     String getItemDescriptorName();
 
 
-    /**
-     * @return true if this property can be queried, false if it can not
-     */
-    boolean isQueryable();
 
-    /**
-     * @return true if this property is derived, false if it is not
-     */
-    boolean isDerived();
 
 }
