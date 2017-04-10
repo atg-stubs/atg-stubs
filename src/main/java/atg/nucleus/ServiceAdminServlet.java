@@ -51,4 +51,15 @@ public class ServiceAdminServlet
     ) throws ServletException, IOException {
         throw new NotImplementedException("insertStyle", this.getClass());
     }
+
+
+    /**
+     * formats a given service name to be valid url with servlet and context paths
+     * @param serviceName
+     * @param req
+     * @return
+     */
+    protected String formatServiceName(String serviceName, HttpServletRequest req){
+        throw new NotImplementedException("formatServiceName", this.getClass());
+    }
 }
