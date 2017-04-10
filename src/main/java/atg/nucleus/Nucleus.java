@@ -6,6 +6,11 @@ import javax.servlet.*;
 import java.io.IOException;
 
 public class Nucleus extends GenericContext implements Servlet {
+
+    public Nucleus(String configPath){
+
+    }
+
     public void init(ServletConfig config) throws ServletException {
         throw new NotImplementedException("init", this.getClass());
     }
