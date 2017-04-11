@@ -3,6 +3,7 @@ package atg.servlet;
 import atg.naming.NameResolver;
 import atg.nucleus.logging.ApplicationLogging;
 import atg.servlet.exittracking.ExitTrackingHandler;
+import io.github.atg.stubs.NotImplementedException;
 
 
 /**
@@ -15,4 +16,7 @@ public class DynamoHttpServletRequest
     ApplicationLogging {
 
 
+    public void setResponse(DynamoHttpServletResponse pResponse){
+        throw new NotImplementedException("setResponse", this.getClass());
+    }
 }

@@ -39,7 +39,7 @@ public class MutableHttpServletRequest implements HttpServletRequest {
      * @param req the underlying request object
      */
     public void setRequest(HttpServletRequest req) {
-
+        throw new NotImplementedException("setRequest", this.getClass());
     }
 
 
