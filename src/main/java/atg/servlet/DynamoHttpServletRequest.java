@@ -19,4 +19,8 @@ public class DynamoHttpServletRequest
     public void setResponse(DynamoHttpServletResponse pResponse){
         throw new NotImplementedException("setResponse", this.getClass());
     }
+
+    public boolean isBrowserType(String pFeature) {
+        throw new NotImplementedException("isBrowserType", this.getClass());
+    }
 }
