@@ -14,6 +14,18 @@ public class DynamoHttpServletResponse
     AddHeaderHttpServletResponse,
     CharacterEncodable {
 
+    public DynamoHttpServletResponse() {
+
+    }
+
+    public DynamoHttpServletResponse(HttpServletResponse response) {
+
+    }
+
+
+    public void setRequest(DynamoHttpServletRequest pRequest){
+        throw new NotImplementedException("setRequest", this.getClass());
+    }
 
     //Being HttpServletResponse implementation
     public void addCookie(Cookie cookie) {
