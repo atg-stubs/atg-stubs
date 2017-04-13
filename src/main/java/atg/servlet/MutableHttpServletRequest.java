@@ -43,6 +43,83 @@ public class MutableHttpServletRequest implements HttpServletRequest {
     }
 
 
+
+
+    public void setContentLength(int length) {
+        throw new NotImplementedException("setContentLength", this.getClass());
+    }
+
+    public void setContentType(String type) {
+        throw new NotImplementedException("setContentType", this.getClass());
+    }
+
+    public void setProtocol(String protocol) {
+        throw new NotImplementedException("setProtocol", this.getClass());
+    }
+
+    public void setScheme(String scheme) {
+        throw new NotImplementedException("setScheme", this.getClass());
+    }
+
+    public void setServerName(String name) {
+        throw new NotImplementedException("setServerName", this.getClass());
+    }
+
+    public void setServerPort(int port) {
+        throw new NotImplementedException("setServerPort", this.getClass());
+    }
+
+    public void setRemoteAddr(String address) {
+        throw new NotImplementedException("setRemoteAddr", this.getClass());
+    }
+
+    public void setRemoteHost(String host) {
+        throw new NotImplementedException("setRemoteHost", this.getClass());
+    }
+
+    public void setInputStream(ServletInputStream stream) {
+        throw new NotImplementedException("setInputStream", this.getClass());
+    }
+
+    public void setMethod(String method) {
+        throw new NotImplementedException("setMethod", this.getClass());
+    }
+
+    public void setRequestURI(String uri) {
+        throw new NotImplementedException("setRequestURI", this.getClass());
+    }
+
+    public void setServletPath(String path) {
+        throw new NotImplementedException("setServletPath", this.getClass());
+    }
+
+    public void setPathInfo(String info) {
+        throw new NotImplementedException("setPathInfo", this.getClass());
+    }
+
+    public void setPathTranslated(String path) {
+        throw new NotImplementedException("setPathTranslated", this.getClass());
+    }
+
+    public void setQueryString(String queryString) {
+        throw new NotImplementedException("setQueryString", this.getClass());
+    }
+
+    public void setRemoteUser(String user) {
+        throw new NotImplementedException("setRemoteUser", this.getClass());
+    }
+
+    public void setAuthType(String type) {
+        throw new NotImplementedException("setAuthType", this.getClass());
+    }
+
+    public void setContextPath(String path) {
+        throw new NotImplementedException("setContextPath", this.getClass());
+    }
+
+
+
+
     //BEGIN HttpServletRequest members
     public String getAuthType() {
         throw new NotImplementedException("getAuthType", this.getClass());
@@ -259,4 +336,12 @@ public class MutableHttpServletRequest implements HttpServletRequest {
     public int getLocalPort() {
         throw new NotImplementedException("getLocalPort", this.getClass());
     }
+
+
+
+
+
+
+
+
 }

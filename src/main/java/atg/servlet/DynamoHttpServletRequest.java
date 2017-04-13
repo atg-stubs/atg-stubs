@@ -10,7 +10,7 @@ import atg.nucleus.naming.ParameterName;
 import atg.security.UserAuthenticator;
 import atg.servlet.exittracking.ExitTrackingHandler;
 import atg.servlet.minimal.WebApplicationInterface;
-import atg.servlet.pipeline.RedirectURLValidator;
+import atg.servlet.pipeline.RedirectURLValidatorService;
 import io.github.atg.stubs.NotImplementedException;
 
 import javax.servlet.*;
@@ -480,11 +480,11 @@ public class DynamoHttpServletRequest
         throw new NotImplementedException("setWebApplication", this.getClass());
     }
 
-    public void setRedirectURLValidator(RedirectURLValidator validator) {
+    public void setRedirectURLValidator(RedirectURLValidatorService validator) {
         throw new NotImplementedException("setRedirectURLValidator", this.getClass());
     }
 
-    public RedirectURLValidator getRedirectURLValidator() {
+    public RedirectURLValidatorService getRedirectURLValidator() {
         throw new NotImplementedException("getRedirectURLValidator", this.getClass());
     }
 
