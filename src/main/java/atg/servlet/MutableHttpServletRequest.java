@@ -121,6 +121,10 @@ public class MutableHttpServletRequest implements HttpServletRequest {
         throw new NotImplementedException("getPermanentAttribute", this.getClass());
     }
 
+    public void setAttributeFactory(String pName, AttributeFactory pFactory) {
+        throw new NotImplementedException("setAttributeFactory", this.getClass());
+    }
+
     public Object getAttribute(String name, boolean create) {
         throw new NotImplementedException("getAttribute", this.getClass());
     }
