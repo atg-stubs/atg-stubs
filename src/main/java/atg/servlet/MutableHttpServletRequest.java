@@ -42,7 +42,9 @@ public class MutableHttpServletRequest implements HttpServletRequest {
         throw new NotImplementedException("setRequest", this.getClass());
     }
 
-
+    public HttpServletRequest getRequest() {
+        throw new NotImplementedException("getRequest", this.getClass());
+    }
 
 
     public void setContentLength(int length) {
