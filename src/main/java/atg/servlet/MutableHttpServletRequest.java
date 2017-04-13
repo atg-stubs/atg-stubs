@@ -117,7 +117,13 @@ public class MutableHttpServletRequest implements HttpServletRequest {
         throw new NotImplementedException("setContextPath", this.getClass());
     }
 
+    public synchronized Object getPermanentAttribute(AttributeFactory factory){
+        throw new NotImplementedException("getPermanentAttribute", this.getClass());
+    }
 
+    public Object getAttribute(String name, boolean create) {
+        throw new NotImplementedException("getAttribute", this.getClass());
+    }
 
 
     //BEGIN HttpServletRequest members
