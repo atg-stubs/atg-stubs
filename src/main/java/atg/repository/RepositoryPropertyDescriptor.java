@@ -39,4 +39,21 @@ public class RepositoryPropertyDescriptor
         );
     }
 
+
+    public RepositoryItemDescriptor getComponentItemDescriptor() {
+        throw new NotImplementedException(
+            "getComponentItemDescriptor",
+            this.getClass()
+        );
+    }
+
+    public RepositoryItemDescriptor getPropertyItemDescriptor() {
+        throw new NotImplementedException(
+            "getPropertyItemDescriptor",
+            this.getClass()
+        );
+    }
+
+
+
 }
