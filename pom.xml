@@ -67,6 +67,18 @@
   <build>
     <plugins>
 
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <!-- java 6 for ATG 10 -->
+          <source>1.6</source>
+          <target>1.6</target>
+          <compilerArgument>-Xlint:unchecked</compilerArgument>
+        </configuration>
+      </plugin>
+
       <!-- from https://maven.apache.org/plugins/maven-source-plugin/usage.html -->
       <plugin>
         <artifactId>maven-source-plugin</artifactId>
