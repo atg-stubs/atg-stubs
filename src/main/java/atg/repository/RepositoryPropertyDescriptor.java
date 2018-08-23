@@ -32,7 +32,7 @@ public class RepositoryPropertyDescriptor
     }
 
 
-    public Class getTypeName() {
+    public String getTypeName() {
         throw new NotImplementedException(
             "getTypeName",
             this.getClass()
