@@ -31,4 +31,12 @@ public class RepositoryPropertyDescriptor
         throw new NotImplementedException("isDerived", this.getClass());
     }
 
+
+    public Class getTypeName() {
+        throw new NotImplementedException(
+            "getTypeName",
+            this.getClass()
+        );
+    }
+
 }
