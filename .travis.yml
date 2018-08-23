@@ -1,12 +1,6 @@
 language: java
-
-#per  https://docs.travis-ci.com/user/reference/trusty/#jvm-clojure-groovy-java-scala-images this is now required in trusty builds
-addons:
-  apt:
-    packages:
-      - openjdk-6-jdk
 jdk:
- - openjdk6
+ - openjdk7
 
 # We only build specific version branches
 branches:
